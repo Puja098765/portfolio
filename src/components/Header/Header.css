@@ -1,37 +1,196 @@
-.portfolio6-header {
-  background-color: #ffffff;
- 
-  padding: 80px 20px;
-  text-align: center;
+.hero-section {
+    background-color: #f9f9f9;
+    padding: 15rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
 }
 
-.portfolio6-header-title {
-    color: #1a1a1a;
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 56px;
-  font-weight: bold;
+.minimal-header {
+    padding: 5rem 0;
 }
 
-.portfolio6-header-subtitle {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #555;
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 2rem;
+    position: absolute;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
-.portfolio6-header-buttons {
-  margin-top: 30px;
+.logo a {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2d2e32;
+    text-decoration: none;
 }
 
-.portfolio6-header-buttons button {
-  margin: 10px;
-  padding: 12px 24px;
-  cursor: pointer;
-   width: 160px;
-  height: 48px;
-  border-radius: 8px;
-  background-color: #6c63ff;
-  color: #ffffff;
-  border: none;
-  font-size: 16px;
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.hamburger-menu .bar {
+    width: 2.5rem;
+    height: 0.3rem;
+    background-color: #2d2e32;
+}
+
+.hero-main-content {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding-top: 8rem;
+}
+
+.hero-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    margin-top: 5rem;
+}
+
+.hero-text {
+    max-width: 50rem;
+}
+
+.hero-text h1 {
+    font-size: 6rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+    color: #2d2e32;
+}
+
+.hero-text p {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+.hero-socials {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero-socials a {
+    color: #2d2e32;
+    font-size: 3rem;
+    transition: color .3s ease-in-out;
+}
+
+.hero-socials a:hover {
+    color: #147efb;
+}
+
+.hero-image {
+    width: 35rem;
+    height: 35rem;
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    overflow: hidden;
+    animation: morph 8s ease-in-out infinite;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 3px solid #2d2e32;
+    position: relative;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@keyframes morph {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+
+.drawer {
+    position: fixed;
+    top: 0;
+    right: -458px;
+    width: 458px;
+    height: 100%;
+    background-color: #2d2e32;
+    color: #fff;
+    padding: 2rem;
+    transform: translateX(0);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.drawer.open {
+    right: 0;
+}
+
+.drawer-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.close-button {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.drawer-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.drawer-content ul li {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #444;
+    padding-bottom: 1rem;
+}
+
+.drawer-content ul li a {
+    position: relative; /* Set position to relative */
+    display: block; /* Change display to block */
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    transition: color .3s ease-in-out;
+    padding-right: 3rem; /* Add padding to prevent text overlap */
+}
+
+.drawer-content ul li a:hover {
+    color: #147efb;
+}
+
+.arrow {
+    position: absolute; /* Set position to absolute */
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%); /* Center arrow vertically */
+    font-size: 2rem;
+    color: #fff;
+    transition: color .3s ease-in-out;
+}
+
+.drawer-content ul li a:hover .arrow {
+    color: #147efb;
 }

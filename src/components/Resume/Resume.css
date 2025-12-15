@@ -1,0 +1,111 @@
+.resume-section {
+    padding: 10rem 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.resume-subtitle {
+    font-size: 1.6rem;
+    color: #ffc107;
+    margin-bottom: 1rem;
+}
+
+.resume-title {
+    font-size: 5rem;
+    font-weight: 900;
+    color: #000;
+}
+
+.resume-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.resume-tab {
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.resume-tab.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.resume-content-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 4rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.resume-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resume-image-blob {
+    width: 300px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    margin-bottom: 2rem;
+}
+
+.resume-signature {
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: 4rem;
+    color: #ffc107;
+}
+
+.resume-details-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.resume-intro {
+    font-size: 2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.resume-secondary-text {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 4rem;
+}
+
+.resume-info-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem 2rem;
+}
+
+.info-item {
+    display: contents;
+}
+
+.info-label {
+    font-size: 1.6rem;
+    color: #555;
+}
+
+.info-value {
+    font-size: 1.6rem;
+    font-weight: 700;
+}

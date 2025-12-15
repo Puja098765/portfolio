@@ -1,0 +1,97 @@
+.projects-section {
+    padding: 10rem 0;
+    background-color: #fff7f0;
+}
+
+.projects-title {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.projects-subtitle {
+    color: #ff9900;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.projects-title h2 {
+    font-size: 4rem;
+    color: #2d2e32;
+    font-family: 'Cedarville Cursive', cursive;
+}
+
+.projects-title h2 .highlight {
+    background-color: #ffc87c;
+    border-radius: 50%;
+    padding: 0.2rem 1rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.project-image {
+    background-color: #e0e0e0;
+    height: 25rem;
+}
+
+.project-info {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-tags {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.project-tags span {
+    background-color: #f0f0f0;
+    color: #555;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+.project-info h3 {
+    font-size: 2rem;
+    color: #2d2e32;
+    margin-bottom: 1.5rem;
+}
+
+.project-link {
+    font-size: 2rem;
+    color: #2d2e32;
+    align-self: flex-end;
+}
+
+.view-all-projects {
+    max-width: 120rem;
+    margin: 5rem auto 0;
+}
+
+.btn-view-all {
+    display: block;
+    width: 100%;
+    background-color: #2d2e32;
+    color: #fff;
+    padding: 2rem 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    text-align: center;
+}

@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.about-page-section {
+    background-color: #fdf5e6;
+    padding: 0 5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+    align-items: center;
+    padding-top: 5rem;
+}
+
+.about-page-left {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-page-image-stack {
+    position: relative;
+    width: 400px;
+    height: 500px;
+}
+
+.about-page-image-background {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+    width: 340px;
+    height: 400px;
+    background-color: #ffc107;
+    border-radius: 80px;
+}
+
+.about-page-image-foreground {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    width: 340px;
+    height: 400px;
+    background-color: #e0e0e0;
+    border-radius: 80px;
+}
+
+.about-page-right {
+    color: #333;
+}
+
+.about-page-subtitle {
+    color: #ffc107;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.about-page-title {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 0.5rem;
+}
+
+.about-page-role {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 3rem;
+    color: #000;
+}
+
+.about-page-description {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+.about-page-philosophy {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 4rem;
+}
+
+.about-page-signature {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+}

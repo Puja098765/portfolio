@@ -1,11 +1,44 @@
-.portfolio6-skills {
-  padding: 60px 20px;
-  text-align: center;
+.skills-section {
+    padding: 10rem 0;
 }
 
-.portfolio6-skills-list {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 15px;
+.skills-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-content p {
+    color: #147efb;
+    font-size: 1.7rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
+    margin-top: 5rem;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 1.7rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    padding: 2rem;
+    transition: transform .3s ease-in-out;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill img {
+    width: 100%;
+    height: auto;
 }

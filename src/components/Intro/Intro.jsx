@@ -1,9 +1,9 @@
 import React from 'react';
-import './About.css';
+import './Intro.css';
 
-const About = () => {
+const Intro = () => {
   return (
-    <section id="about" className="about-section">
+    <section id="intro" className="about-section">
       <div className="about-container">
         <div className="about-left">
           <div className="about-experience">
@@ -15,7 +15,7 @@ const About = () => {
         </div>
         <div className="about-right">
           <p className="about-greeting">Hello I'm</p>
-          <h1 className="about-name">Mark Henry,</h1>
+          <h1 className="about-name">PEREZ,</h1>
           <h2 className="about-title">Product Designer</h2>
           <h3 className="about-location">Based in German</h3>
           <p className="about-description">
@@ -42,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Intro;
