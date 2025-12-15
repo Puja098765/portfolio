@@ -1,0 +1,11 @@
+.portfolio6-skills {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.portfolio6-skills-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
